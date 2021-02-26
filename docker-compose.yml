@@ -25,6 +25,7 @@ services:
     build: ./
     image: python-application:latest
     container_name: python-application
+    command: python -m app.index facebook
     environment:
       ES_HOST: elasticsearch
       ES_PORT: 9200
